@@ -1,0 +1,25 @@
+{
+    "login": [
+        {
+            "cpf": 37775516860,
+            "senha": "123456"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "name": "caneta BIC preta",
+            "price": 5.89
+        },
+        {
+            "id": 2,
+            "name": "notebook mac pro",
+            "price": 12000.00
+        },
+        {
+            "id": 3,
+            "name": "samsung S20+",
+            "price": 5000
+        }
+    ]
+}
