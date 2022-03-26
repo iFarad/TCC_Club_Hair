@@ -1,25 +1,38 @@
 {
     "login": [
         {
-            "cpf": 37775516860,
-            "senha": "123456"
+            "id": 1,
+            "cpf": 123,
+            "senha": "123"
         }
     ],
-    "products": [
+    "barbearias": [
         {
             "id": 1,
-            "name": "caneta BIC preta",
-            "price": 5.89
-        },
-        {
-            "id": 2,
-            "name": "notebook mac pro",
-            "price": 12000.00
-        },
-        {
-            "id": 3,
-            "name": "samsung S20+",
-            "price": 5000
+            "email": "teste@teste.com",
+            "telefone": "11912345678",
+            "nome": "Severino",
+            "sobrenome": "Pereira",
+            "cpf": "123",
+            "rg": "456277584",
+            "orgaoEmissor": "SSP",
+            "servicos": [
+                {
+                    "nome": "Corte Cabelo",
+                    "tempo": 30,
+                    "valor": 50
+                },
+                {
+                    "nome": "Tintura",
+                    "tempo": 60,
+                    "valor": 500
+                },
+                {
+                    "nome": "Alisamento",
+                    "tempo": 60,
+                    "valor": 200
+                }
+            ]
         }
     ]
 }

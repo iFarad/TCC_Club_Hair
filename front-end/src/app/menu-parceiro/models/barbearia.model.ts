@@ -1,9 +1,4 @@
-export class login {
-    cpf: string;
-    senha: string;
-}
-
-export class novoColaborador {
+export class barbearia {
     email: string;
     telefone: string;
     nome: string;
@@ -11,5 +6,14 @@ export class novoColaborador {
     cpf: string;
     rg: string;
     orgaoEmissor: string;
-    senha: string;
+    servicos: Array<servico>
 }
+
+export class servico {
+    nome: string;
+    tempo: number;
+    valor: number;
+
+}
+
+

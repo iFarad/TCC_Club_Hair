@@ -1,0 +1,21 @@
+<div class="form-row my-2">
+    <div class="col-6">
+        <label>Serviço</label>
+        <input type="text" class="form-control" placeholder="Nome do serviço a ser oferecido"
+            [(ngModel)]="servico.nome">
+    </div>
+</div>
+<div class="form-row my-2">
+    <div class="col-6">
+        <label>Tempo</label>
+        <input type="text" class="form-control" placeholder="Tempo total do serviço" [(ngModel)]="servico.tempo">
+    </div>
+</div>
+<div class="form-row my-2">
+    <div class="col-6">
+        <label>Valor</label>
+        <input type="text" class="form-control" placeholder="Valor a ser cobrado pelo serviço"
+            [(ngModel)]="servico.valor">
+    </div>
+</div>
+<button class="btn btn-primary my-4" (click)="AdicionarServico()">Adicionar</button>

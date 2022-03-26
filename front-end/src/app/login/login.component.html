@@ -1,63 +1,64 @@
-<div class="section">
-    <div id="teste" class="container cube">
-        <div class="row full-height justify-content-center flippety">
-            <div class="col-12 text-center align-self-center py-5">
-                <div class="section pb-5 pt-5 pt-sm-2 text-center">
-                    <h6 class="mb-0 pb-3"><span>Usuário</span><span>Parceiro</span></h6>
-                    <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
-                    <label for="reg-log"><i class="bi bi-arrow-down-short"></i></label>
-                    <div class="card-3d-wrap mx-auto">
-                        <div class="card-3d-wrapper">
-                            <div class="card-front">
-                                <div class="center-wrap">
-                                    <div class="section text-center">
-                                        <h4 class="mb-4 pb-3">Usuário</h4>
-                                        <div class="form-group">
-                                            <input type="cpf" name="logcpf" class="form-style" placeholder="Seu CPF"
-                                                id="logcpf" autocomplete="off" (ngModel)="usuario.cpf">
-                                            <i class="input-icon bi bi-person"></i>
+<div class="bodyTest">
+    <div class="section">
+        <div id="teste" class="container cube">
+            <div class="row full-height justify-content-center flippety">
+                <div class="col-12 text-center align-self-center py-5">
+                    <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                        <h6 class="mb-0 pb-3"><span>Usuário</span><span>Parceiro</span></h6>
+                        <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
+                        <label for="reg-log"><i class="bi bi-arrow-down-short"></i></label>
+                        <div class="card-3d-wrap mx-auto">
+                            <div class="card-3d-wrapper">
+                                <div class="card-front">
+                                    <div class="center-wrap">
+                                        <div class="section text-center">
+                                            <h4 class="mb-4 pb-3">Usuário</h4>
+                                            <div class="form-group">
+                                                <input type="cpf" name="logcpf" class="form-style" placeholder="Seu CPF"
+                                                    id="logcpf" autocomplete="off" [(ngModel)]="usuario.cpf">
+                                                <i class="input-icon bi bi-person"></i>
+                                            </div>
+                                            <div class="form-group mt-2">
+                                                <input type="password" name="logpass" class="form-style"
+                                                    placeholder="Sua Senha" id="logpass" autocomplete="off"
+                                                    [(ngModel)]="usuario.senha">
+                                                <i class="input-icon bi bi-lock"></i>
+                                            </div>
+                                            <a class="btn mt-4" (click)="logar()">entrar</a>
+                                            <p class="mb-0 mt-4 text-center"><a class="link">Esqueci minha
+                                                    senha</a>
+                                            </p>
+                                            <p class="mb-0 mt-4 text-center" (click)="teste()"><a class="link">Não
+                                                    tenho cadastro</a></p>
                                         </div>
-                                        <div class="form-group mt-2">
-                                            <input type="password" name="logpass" class="form-style"
-                                                placeholder="Sua Senha" id="logpass" autocomplete="off"
-                                                (ngModel)="usuario.senha">
-                                            <i class="input-icon bi bi-lock"></i>
-                                        </div>
-                                        <a href="#" class="btn mt-4" (click)="teste()">entrar</a>
-                                        <p class="mb-0 mt-4 text-center"><a href="#0" class="link">Esqueci minha
-                                                senha</a>
-                                        </p>
-                                        <p class="mb-0 mt-4 text-center"><a href="#0" class="link" (click)="teste()">Não
-                                                tenho cadastro</a></p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card-back">
-                                <div class="center-wrap">
-                                    <div class="section text-center">
-                                        <h4 class="mb-4 pb-3">Parceiro</h4>
-                                        <div class="form-group">
-                                            <input type="cpf" name="logcpf" class="form-style" placeholder="Seu CPF"
-                                                id="logcpf" autocomplete="off">
-                                            <i class="input-icon bi bi-person"></i>
-                                        </div>
-                                        <div class="form-group mt-2">
-                                            <input type="password" name="logpass" class="form-style"
-                                                placeholder="Sua Senha" id="logpass" autocomplete="off">
-                                            <i class="input-icon bi bi-lock"></i>
-                                        </div>
+                                <div class="card-back">
+                                    <div class="center-wrap">
+                                        <div class="section text-center">
+                                            <h4 class="mb-4 pb-3">Parceiro</h4>
+                                            <div class="form-group">
+                                                <input type="cpf" name="logcpf" class="form-style" placeholder="Seu CPF"
+                                                    id="logcpf" autocomplete="off">
+                                                <i class="input-icon bi bi-person"></i>
+                                            </div>
+                                            <div class="form-group mt-2">
+                                                <input type="password" name="logpass" class="form-style"
+                                                    placeholder="Sua Senha" id="logpass" autocomplete="off">
+                                                <i class="input-icon bi bi-lock"></i>
+                                            </div>
 
-                                        <button (click)="teste()" type="button" class="close btn mt-4"
-                                            data-dismiss="alert" aria-label="Close">
-                                            <span aria-hidden="true">entrar</span>
-                                        </button>
+                                            <button (click)="logar()" type="button" class="close btn mt-4"
+                                                data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">entrar</span>
+                                            </button>
 
-                                        <p (click)="teste()" class="mb-0 mt-4 text-center"><a href="#0"
-                                                class="link">Esqueci minha
-                                                senha</a>
-                                        </p>
-                                        <p class="mb-0 mt-4 text-center"><a href="#0" class="link" (click)="teste()">Não
-                                                tenho cadastro</a></p>
+                                            <p class="mb-0 mt-4 text-center"><a class="link">Esqueci minha
+                                                    senha</a>
+                                            </p>
+                                            <p class="mb-0 mt-4 text-center" (click)="teste()"><a class="link">Não
+                                                    tenho cadastro</a></p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -65,107 +66,107 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="flop row full-height justify-content-center ">
-            <div class="col-12 text-center align-self-center py-5">
-                <div class="section pb-5 pt-5 pt-sm-2 text-center">
-                    <h6 class="mb-0 pb-3"><span>Usuário</span><span>Parceiro</span></h6>
-                    <input class="checkbox" type="checkbox" id="reg-log2" name="reg-log2" />
-                    <label for="reg-log2"></label>
-                    <div class="card-3d-wrap mx-auto wrap-signup">
-                        <div class="card-3d-wrapper">
-                            <div class="card-front">
-                                <div class="center-wrap">
-                                    <div class="section text-center">
-                                        <h4 class="mb-4 pb-3">Usuário</h4>
+            <div class="flop row full-height justify-content-center ">
+                <div class="col-12 text-center align-self-center py-5">
+                    <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                        <h6 class="mb-0 pb-3"><span>Usuário</span><span>Parceiro</span></h6>
+                        <input class="checkbox" type="checkbox" id="reg-log2" name="reg-log2" />
+                        <label for="reg-log2"></label>
+                        <div class="card-3d-wrap mx-auto wrap-signup">
+                            <div class="card-3d-wrapper">
+                                <div class="card-front">
+                                    <div class="center-wrap">
+                                        <div class="section text-center">
+                                            <h4 class="mb-4 pb-3">Usuário</h4>
 
-                                        <div class="form-group">
-                                            <input type="nome" name="lognome" class="form-style"
-                                                placeholder="Seu Nome Completo" id="lognome" autocomplete="off">
-                                            <i class="input-icon bi bi-person"></i>
-                                        </div>
-                                        <div class="form-group mt-2">
-                                            <input type="email" name="logemail" class="form-style"
-                                                placeholder="Seu Email" id="logemail" autocomplete="off">
-                                            <i class="input-icon bi bi-at"></i>
-                                        </div>
+                                            <div class="form-group">
+                                                <input type="nome" name="lognome" class="form-style"
+                                                    placeholder="Seu Nome Completo" id="lognome" autocomplete="off">
+                                                <i class="input-icon bi bi-person"></i>
+                                            </div>
+                                            <div class="form-group mt-2">
+                                                <input type="email" name="logemail" class="form-style"
+                                                    placeholder="Seu Email" id="logemail" autocomplete="off">
+                                                <i class="input-icon bi bi-at"></i>
+                                            </div>
 
-                                        <div class="form-group mt-2">
-                                            <input type="telefone" name="logtel" class="form-style"
-                                                placeholder="Seu Telefone" id="logtel" autocomplete="off">
-                                            <i class="input-icon bi bi-phone"></i>
-                                        </div>
+                                            <div class="form-group mt-2">
+                                                <input type="telefone" name="logtel" class="form-style"
+                                                    placeholder="Seu Telefone" id="logtel" autocomplete="off">
+                                                <i class="input-icon bi bi-phone"></i>
+                                            </div>
 
-                                        <div class="form-group mt-2">
-                                            <input type="cpf" name="logcpf" class="form-style" placeholder="Seu CPF"
-                                                id="logcpf" autocomplete="off">
-                                            <i class="input-icon bi bi-file-earmark-person"></i>
-                                        </div>
+                                            <div class="form-group mt-2">
+                                                <input type="cpf" name="logcpf" class="form-style" placeholder="Seu CPF"
+                                                    id="logcpf" autocomplete="off">
+                                                <i class="input-icon bi bi-file-earmark-person"></i>
+                                            </div>
 
-                                        <div class="form-group mt-2">
-                                            <input type="password" name="logpass" class="form-style"
-                                                placeholder="Sua Senha" id="logpass" autocomplete="off">
-                                            <i class="input-icon bi bi-lock"></i>
-                                        </div>
+                                            <div class="form-group mt-2">
+                                                <input type="password" name="logpass" class="form-style"
+                                                    placeholder="Sua Senha" id="logpass" autocomplete="off">
+                                                <i class="input-icon bi bi-lock"></i>
+                                            </div>
 
-                                        <div class="form-group mt-2">
-                                            <input type="password2" name="logpass2" class="form-style"
-                                                placeholder="Confirme sua Senha" id="logpass2" autocomplete="off">
-                                            <i class="input-icon bi bi-lock"></i>
+                                            <div class="form-group mt-2">
+                                                <input type="password2" name="logpass2" class="form-style"
+                                                    placeholder="Confirme sua Senha" id="logpass2" autocomplete="off">
+                                                <i class="input-icon bi bi-lock"></i>
+                                            </div>
+                                            <a href="#" class="btn mt-4">cadastrar e entrar</a>
                                         </div>
-                                        <a href="#" class="btn mt-4">cadastrar e entrar</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card-back">
-                                <div class="center-wrap">
-                                    <div class="section text-center">
-                                        <h4 class="mb-4 pb-3">Parceiro</h4>
-                                        <div class="form-group">
-                                            <input type="text" name="logemail" class="form-style"
-                                                placeholder="Seu Email" id="logemail" autocomplete="off">
-                                            <i class="input-icon bi bi-at"></i>
-                                        </div>
-                                        <div class="form-group mt-2">
-                                            <input type="telefone" name="logtel" class="form-style"
-                                                placeholder="Seu Telefone" id="logtel" autocomplete="off">
-                                            <i class="input-icon bi bi-phone"></i>
-                                        </div>
-                                        <div class="form-group mt-2">
-                                            <input type="nome" name="lognome" class="form-style"
-                                                placeholder="Seu Nome Completo" id="lognome" autocomplete="off">
-                                            <i class="input-icon bi bi-person"></i>
-                                        </div>
-                                        <div class="form-group mt-2">
-                                            <input type="cpf" name="logcpf" class="form-style" placeholder="Seu CPF"
-                                                id="logcpf" autocomplete="off">
-                                            <i class="input-icon bi bi-file-earmark-person"></i>
-                                        </div>
+                                <div class="card-back">
+                                    <div class="center-wrap">
+                                        <div class="section text-center">
+                                            <h4 class="mb-4 pb-3">Parceiro</h4>
+                                            <div class="form-group">
+                                                <input type="text" name="logemail" class="form-style"
+                                                    placeholder="Seu Email" id="logemail" autocomplete="off">
+                                                <i class="input-icon bi bi-at"></i>
+                                            </div>
+                                            <div class="form-group mt-2">
+                                                <input type="telefone" name="logtel" class="form-style"
+                                                    placeholder="Seu Telefone" id="logtel" autocomplete="off">
+                                                <i class="input-icon bi bi-phone"></i>
+                                            </div>
+                                            <div class="form-group mt-2">
+                                                <input type="nome" name="lognome" class="form-style"
+                                                    placeholder="Seu Nome Completo" id="lognome" autocomplete="off">
+                                                <i class="input-icon bi bi-person"></i>
+                                            </div>
+                                            <div class="form-group mt-2">
+                                                <input type="cpf" name="logcpf" class="form-style" placeholder="Seu CPF"
+                                                    id="logcpf" autocomplete="off">
+                                                <i class="input-icon bi bi-file-earmark-person"></i>
+                                            </div>
 
-                                        <div class="form-group mt-2">
-                                            <input type="rg" name="logRg" class="form-style" placeholder="Seu RG"
-                                                id="logRg" autocomplete="off">
-                                            <i class="input-icon bi bi-person-badge"></i>
-                                        </div>
+                                            <div class="form-group mt-2">
+                                                <input type="rg" name="logRg" class="form-style" placeholder="Seu RG"
+                                                    id="logRg" autocomplete="off">
+                                                <i class="input-icon bi bi-person-badge"></i>
+                                            </div>
 
-                                        <div class="form-group mt-2">
-                                            <input type="OE" name="logOE" class="form-style" placeholder="Orgão Emissor"
-                                                id="logOE" autocomplete="off">
-                                            <i class="input-icon bi bi-card-text"></i>
-                                        </div>
-                                        <div class="form-group mt-2">
-                                            <input type="password" name="logpass" class="form-style"
-                                                placeholder="Sua Senha" id="logpass" autocomplete="off">
-                                            <i class="input-icon bi bi-lock"></i>
-                                        </div>
+                                            <div class="form-group mt-2">
+                                                <input type="OE" name="logOE" class="form-style"
+                                                    placeholder="Orgão Emissor" id="logOE" autocomplete="off">
+                                                <i class="input-icon bi bi-card-text"></i>
+                                            </div>
+                                            <div class="form-group mt-2">
+                                                <input type="password" name="logpass" class="form-style"
+                                                    placeholder="Sua Senha" id="logpass" autocomplete="off">
+                                                <i class="input-icon bi bi-lock"></i>
+                                            </div>
 
-                                        <div class="form-group mt-2">
-                                            <input type="password2" name="logpass2" class="form-style"
-                                                placeholder="Confirme sua Senha" id="logpass2" autocomplete="off">
-                                            <i class="input-icon bi bi-lock"></i>
+                                            <div class="form-group mt-2">
+                                                <input type="password2" name="logpass2" class="form-style"
+                                                    placeholder="Confirme sua Senha" id="logpass2" autocomplete="off">
+                                                <i class="input-icon bi bi-lock"></i>
+                                            </div>
+                                            <a href="#" class="btn mt-4">cadastrar e entrar</a>
                                         </div>
-                                        <a href="#" class="btn mt-4">cadastrar e entrar</a>
                                     </div>
                                 </div>
                             </div>

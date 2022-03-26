@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,18 @@ import { Component } from '@angular/core';
   styles: []
 })
 export class AppComponent {
-  title = 'front-end';
+  title = 'Club Hair';
+
+  logado: boolean
+
+  constructor(
+    private router: Router
+  ) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.logado = document.cookie.split(';')[0].includes("login")
+      }
+    });
+  }
 }
 
