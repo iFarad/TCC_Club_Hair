@@ -1,0 +1,25 @@
+<div class="row my-4">
+  <div *ngFor="let servico of servicos" class="col-3">
+    <div class="card my-4">
+      <div class="card-body">
+        <h5 class="card-title">{{servico.nome}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Tempo: {{servico.tempo}} min</h6>
+        <h6 class="card-subtitle mb-2 text-muted">Valor: R$ {{servico.valor}},00</h6>
+        <a routerLink="/products/update/{{id}}/{{servico.nome}}" class="edit">
+          <i class="material-icons">
+            edit
+          </i>
+        </a>
+        <a routerLink="/products/delete/{{id}}/{{servico.nome}}" class="delete">
+          <i class="material-icons">
+            delete
+          </i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button routerLink="/products/update/{{id}}/0">
+  Adicionar servico
+</button>

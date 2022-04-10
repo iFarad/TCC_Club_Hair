@@ -1,38 +1,63 @@
 {
-    "login": [
+  "login": [
+    {
+      "id": 1,
+      "cpf": 123,
+      "senha": "123"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "email": "teste@teste.com",
+      "telefone": "11912345678",
+      "nome": "Severino",
+      "sobrenome": "Pereira",
+      "cpf": "123",
+      "rg": "456277584",
+      "orgaoEmissor": "SSP",
+      "servicos": [
         {
-            "id": 1,
-            "cpf": 123,
-            "senha": "123"
-        }
-    ],
-    "barbearias": [
+          "nome": "Tintura",
+          "tempo": 60,
+          "valor": 500
+        },
         {
-            "id": 1,
-            "email": "teste@teste.com",
-            "telefone": "11912345678",
-            "nome": "Severino",
-            "sobrenome": "Pereira",
-            "cpf": "123",
-            "rg": "456277584",
-            "orgaoEmissor": "SSP",
-            "servicos": [
-                {
-                    "nome": "Corte Cabelo",
-                    "tempo": 30,
-                    "valor": 50
-                },
-                {
-                    "nome": "Tintura",
-                    "tempo": 60,
-                    "valor": 500
-                },
-                {
-                    "nome": "Alisamento",
-                    "tempo": 60,
-                    "valor": 200
-                }
-            ]
+          "nome": "Alisamento",
+          "tempo": 60,
+          "valor": 200
+        },
+        {
+          "nome": "Corte Cabelo",
+          "tempo": 240,
+          "valor": 50
+        },
+        {
+          "nome": "Corte Moicano",
+          "tempo": "15",
+          "valor": 500
+        },
+        {
+          "nome": "Corte doido",
+          "tempo": 60,
+          "valor": 500
         }
-    ]
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Notebook Mac Pro",
+      "price": 12000.89
+    },
+    {
+      "id": 3,
+      "name": "Sansung S20+ Ultra",
+      "price": "7520.89"
+    },
+    {
+      "name": "Lapis Preto Básico",
+      "price": "1.50",
+      "id": 4
+    }
+  ]
 }

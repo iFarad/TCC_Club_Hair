@@ -1,2 +1,5 @@
-<navbar *ngIf="logado"></navbar>
-<router-outlet></router-outlet>
+<app-header *ngIf="logado"></app-header>
+<div [class.container]="logado">
+    <router-outlet></router-outlet>
+</div>
+<app-footer *ngIf="logado"></app-footer>

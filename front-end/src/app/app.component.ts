@@ -3,8 +3,7 @@ import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  templateUrl: 'app.component.html',
-  styles: []
+  templateUrl: 'app.component.html'
 })
 export class AppComponent {
   title = 'Club Hair';
@@ -19,6 +18,6 @@ export class AppComponent {
         this.logado = document.cookie.split(';')[0].includes("login")
       }
     });
+    if (!document.cookie.split(';')[0].includes("login")) this.router.navigate(['/login']);
   }
 }
-

@@ -1,0 +1,81 @@
+<ng-container *ngIf="!novoProduto">
+    <h4>Alterar Produto</h4>
+    <div class="form-row my-2">
+        <div class="col-6">
+            <label>Serviço</label>
+            <input type="text" class="form-control" placeholder="Nome do serviço a ser oferecido"
+                [(ngModel)]="servico.nome">
+        </div>
+    </div>
+    <div class="form-row my-2">
+        <div class="col-6">
+            <label>Tempo</label>
+            <input type="number" class="form-control" placeholder="Tempo total do serviço" [(ngModel)]="servico.tempo">
+        </div>
+    </div>
+    <div class="form-row my-2">
+        <div class="col-6">
+            <label>Valor</label>
+            <input type="number" class="form-control" placeholder="Valor a ser cobrado pelo serviço"
+                [(ngModel)]="servico.valor">
+        </div>
+    </div>
+    <button (click)="updateProduct()" color="primary">
+        Atualizar
+    </button>
+
+    <button (click)="cancel()">
+        Cancelar
+    </button>
+</ng-container>
+
+
+<ng-container *ngIf="novoProduto">
+    <div class="form-row my-2">
+        <div class="col-6">
+            <label>Serviço</label>
+            <input type="text" class="form-control" placeholder="Nome do serviço a ser oferecido"
+                [(ngModel)]="novoServico.nome">
+        </div>
+    </div>
+    <div class="form-row my-2">
+        <div class="col-6">
+            <label>Tempo</label>
+            <input type="number" class="form-control" placeholder="Tempo total do serviço"
+                [(ngModel)]="novoServico.tempo">
+        </div>
+    </div>
+    <div class="form-row my-2">
+        <div class="col-6">
+            <label>Valor</label>
+            <input type="number" class="form-control" placeholder="Valor a ser cobrado pelo serviço"
+                [(ngModel)]="novoServico.valor">
+        </div>
+    </div>
+    <button class="btn btn-primary my-4" (click)="AdicionarServico()">Adicionar</button>
+</ng-container>
+
+
+
+
+<!-- <mat-card>
+    <mat-card-title>Alterar Produto</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="servico.nome" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Preço (R$)" [(ngModel)]="servico.valor" name="price">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Tempo (min)" [(ngModel)]="servico.tempo" name="tempo">
+        </mat-form-field>
+    </form> -->
+<!-- <button mat-raised-button (click)="updateProduct()" color="primary">
+    Atualizar
+</button>
+
+<button mat-raised-button (click)="cancel()">
+    Cancelar
+</button>
+</mat-card> -->

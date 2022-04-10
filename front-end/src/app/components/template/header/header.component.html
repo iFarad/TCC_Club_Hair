@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-dark bgCH">
+    <a class="navbar-brand"><img src="/assets/img/clubHair.JPG" alt="image" class="imgRadius"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/products">
+                    <i class="material-icons">
+                        storefront
+                    </i>
+                    Meus serviços
+                </a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/">
+                    <i class="material-icons">
+                        home
+                    </i>
+                    Início
+                </a>
+            </li>
+        </ul>
+        <div class="form-inline my-2 my-lg-0 disabled ml-auto d-flex" style="margin-left: auto;">
+            <input class="form-control mr-sm-2 mx-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-outline-success my-2 my-sm-0 mx-2" type="submit">Pesquisar</button>
+            <button class="btn btn-outline-danger my-2 my-sm-0 mx-2" type="submit" (click)="logout()"><i
+                    class="bi bi-box-arrow-left"></i> Sair</button>
+        </div>
+    </div>
+</nav>
